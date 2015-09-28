@@ -1,0 +1,5 @@
+#!/bin/bash
+ulimit -n 2560 &>/dev/null || true
+set -e
+make index.html
+browserify index.jsx -o dist/index.js -dv

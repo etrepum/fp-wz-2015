@@ -1,0 +1,5 @@
+*.py[co]
+*.beam
+*.o
+.DS_Store
+/node_modules

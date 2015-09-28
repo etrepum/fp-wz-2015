@@ -1,0 +1,14 @@
+#!/bin/bash
+ulimit -n 2560 &>/dev/null || true
+set -e
+trap 'kill $(jobs -pr)' SIGINT SIGTERM EXIT
+watchify index.jsx -o dist/index.js -dv &
+nodemon \
+    --watch slides.md \
+    --watch header.html \
+    --watch default.revealjs \
+    --watch Makefile \
+    --exec 'make index.html' &
+for job in $(jobs -p); do
+    wait $job
+done

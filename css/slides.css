@@ -1,0 +1,199 @@
+@import url("../vendor/source-code-pro-2.010R-ro-1.030R-it/source-code-pro.css");
+
+body {
+/*  background-color: #f0f0f0;*/
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+/*  font-family: "Helvetica Neue", sans-serif;
+  */
+  font-weight: normal;
+  text-transform: none;
+}
+
+#title h3 { line-height: 1.25em; }
+
+.reveal {
+/*
+  font-family: "Gill Sans", sans-serif;
+  font-weight: normal;
+*/
+}
+
+.reveal section h1 { margin-bottom: 30px; font-size: 2.25em; }
+.reveal section.small-title h1 { font-size: 2em; }
+.reveal section.tiny-title h1 { font-size: 1.5em; }
+
+.reveal ul { display: block; margin-left: 1em; }
+
+.reveal .large-quote { font-size: 2.5em; line-height: 1em; }
+#paradox dd { text-align: right; }
+
+.reveal li { margin-bottom: 0.5em; }
+.reveal dl { width: 100%; }
+.reveal dl dt { text-align: left; font-weight: bold; }
+.reveal dl dd { text-align: left; margin-left: 1.5em; }
+.syntax pre { box-shadow: none; font-size: 1.2em; }
+.reveal img { max-height: 80%; }
+
+.reveal pre code {
+  font-family: 'Source Code Pro', monospace;
+  padding: 0;
+  background-color: inherit;
+  color: #333;
+}
+.reveal section pre { box-shadow: none; font-size: 0.6em; }
+.reveal section.small-code pre { font-size: 0.45em; }
+.wide-code pre {  margin-left: -3%; }
+.no-header h1 { display: none; }
+.no-header pre { margin-top: -0.5em; }
+.reveal img.full { max-width: 100%; max-height: 100%; width: 80%; height: auto; }
+
+.reveal img.portrait { width: 50%; }
+
+#academic-curiosity {
+  height: 100%;
+}
+#academic-curiosity .cs-paper {
+  display: flex;
+  height: 85%;
+  width: 100%;
+  background-image: url('../images/axiomatic-basis-computer-programming-pg1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#fig .fig-logo,
+#mission-bit .mission-bit-logo {
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  top: calc(50% + 1.75em);
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  opacity: 0.075;
+  border: 0;
+  box-shadow: none;
+}
+
+section blockquote strong {
+  background-color: rgba(255,255,255,0);
+}
+
+section.present blockquote strong {
+  transition: background-color 5s;
+  background-color: rgba(255,251,204,0.5);
+}
+
+#learn-more-haskell {
+  font-size: 90%;
+}
+
+.highlight .hl,
+.highlight-type .hl-type,
+.highlight-constructor .hl-constructor {
+  background-color: #ffff00;
+}
+.highlight .hl1 {
+  background-color: #eeee00;
+}
+.highlight .hl2 {
+  background-color: #dddd00;
+}
+
+.reveal blockquote {
+  margin-top: 1em;
+  box-shadow: none;
+  width: 80%;
+  text-align: left;
+}
+
+.reveal blockquote footer {
+  text-align: right;
+  font-size: 0.6em;
+  margin-top: 1em;
+}
+
+.reveal pre code {
+  max-height: inherit;
+}
+
+.left {
+  text-align: left;
+}
+
+.reveal .react-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.reveal table.array {
+  border: 1px solid black;
+}
+
+.reveal table.array td {
+  border: 1px solid black;
+}
+
+.reveal .array .shared td {
+  background-color: #ccf;
+}
+
+svg.full { width: 70%; }
+#supervisor g {
+  cursor: pointer;
+}
+#supervisor g:hover {
+  opacity: 0.5;
+}
+#distributed-diagram svg {
+  cursor: pointer;
+}
+#scheduler img { border: none; box-shadow: none; width: 85%; }
+.diagram text { text-anchor: middle; alignment-baseline: central; }
+.diagram rect { fill: none; stroke: black; }
+.diagram circle { stroke: rgb(0, 0, 0); }
+.diagram line { stroke: rgb(0, 0, 0); }
+.diagram .supervisor circle { fill: rgb(255,128,128); }
+.diagram .worker circle { fill: rgb(128,255,128); }
+.diagram .messages circle { fill: rgb(128,128,255); }
+.diagram .messages circle.response { fill: rgb(128,255,255); }
+.diagram .node > text, .diagram .epmd > text { font-size: 80%; }
+.diagram .epmd > rect { fill: rgb(230, 230, 230); }
+.diagram line.tcp { stroke-width: 5; stroke-dasharray: 15,5; }
+.diagram .phase1 { opacity: 0; }
+.diagram .phase2 { opacity: 0; }
+
+#concurrency-table { width: 100%; color: #666; }
+#concurrency-table td { border-bottom: none; }
+#concurrency-table .num { text-align: right; }
+#concurrency-table .name { padding-left: 1em; }
+#concurrency-table .bar-ctr { height: 0; z-index: -1}
+#concurrency-table .bar { height: 1.2em; background-color: #ccc; z-index: -1; }
+#concurrency-table .haskell { color: #66f; }
+#concurrency-table .erlang { color: #66f; }
+#concurrency-table .haskell .bar { width: 1.99%; }
+#concurrency-table .erlang .bar { width: 4.0625%; }
+#concurrency-table .go .bar { width: 12.5%; }
+#concurrency-table .java-min .bar { width: 100%; }
+#concurrency-table .c-min .bar { width: 100%; }
+#concurrency-table .java .bar { width: 12.5%; background-color: #fcc; }
+#concurrency-table .c .bar { width: 100%; background-color: #fcc; }
+
+#message-passing pre, #message-passing-2 pre { font-size: 1.2em; }
+
+#counter-example-div {
+  cursor: pointer;
+  border: 1px dashed black;
+  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+  -moz-user-select: none; /* mozilla browsers */
+  -khtml-user-select: none; /* webkit (konqueror) browsers */
+  -ms-user-select: none; /* IE10+ */
+}
