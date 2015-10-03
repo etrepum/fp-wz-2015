@@ -146,7 +146,7 @@ Using Erlang will probably not make you rich!<br><br>
 # Pre-History
 
 1930s-1950s
-~   Lambda Calculus (Turing)
+~   Lambda Calculus (Church)
 ~   Combinatory Calculus (Curry & Feys)
 ~   LISP (McCarthy)
 
@@ -668,7 +668,7 @@ React.render(<Counter />,
 
 * Time travel (undo / redo)
 * Everything is reproducible and testable, without mocking
-* Performance (only re-render what changed, efficienty)
+* Performance (only re-render what changed, efficiently)
 
 # Learn More (Erlang)
 
